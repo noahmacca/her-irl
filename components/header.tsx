@@ -53,7 +53,7 @@ export function Header() {
       <div className="flex items-center justify-end space-x-2">
         <a className={cn(buttonVariants({ variant: 'outline' }))}>
           <IconUser className="size-6 mr-2 dark:hidden" />
-          <span className="hidden ml-2 md:flex">Samantha's Memory</span>
+          <span className="hidden ml-2 md:flex">Samantha&apos;s Memory</span>
         </a>
       </div>
     </header>

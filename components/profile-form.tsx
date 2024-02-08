@@ -1,3 +1,12 @@
+const sampleData = [
+  {
+    id: 'challenge-1',
+    title: 'Stressful interactions with Jane'
+  },
+  { id: 'challenge-2', title: 'Not sleeping enough' },
+  { id: 'challenge-3', title: 'Behind on coding Samantha AI' }
+]
+
 export default function ProfileForm() {
   return (
     <div className="bg-white">
@@ -8,11 +17,7 @@ export default function ProfileForm() {
               Challenges
             </div>
             <div className="flex flex-col space-y-1">
-              {[
-                { id: 'challenge-1', title: '30 Days of Code' },
-                { id: 'challenge-2', title: '100 Days of Design' },
-                { id: 'challenge-3', title: 'Data Structures and Algorithms' }
-              ].map(challenge => (
+              {sampleData.map(challenge => (
                 <div
                   key={challenge.id}
                   className="flex justify-between border border-gray-400 px-2 py-1 rounded text-sm"

@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 
-import { useProfile } from '@/lib/hooks/use-profile-modal'
+import { useProfile } from '@/lib/hooks/use-profile'
 import { Button } from '@/components/ui/button'
 
 export function ProfileToggle() {

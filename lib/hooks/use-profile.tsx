@@ -27,8 +27,8 @@ interface ProfileProviderProps {
 }
 
 export function ProfileProvider({ children }: ProfileProviderProps) {
-  const [isProfileOpen, setProfileOpen] = React.useState(true)
-  const [isLoading, setLoading] = React.useState(true)
+  const [isProfileOpen, setProfileOpen] = React.useState(false)
+  const [isLoading, setLoading] = React.useState(false)
 
   React.useEffect(() => {
     const value = localStorage.getItem(LOCAL_STORAGE_KEY)

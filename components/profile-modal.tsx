@@ -1,6 +1,6 @@
 'use client'
 
-import { useProfile } from '@/lib/hooks/use-profile-modal'
+import { useProfile } from '@/lib/hooks/use-profile'
 import { useEffect } from 'react'
 
 import ProfileForm from '@/components/profile-form'

@@ -9,6 +9,8 @@ import { IconNextChat, IconUser, IconSeparator } from '@/components/ui/icons'
 import { UserMenu } from '@/components/user-menu'
 import { SidebarMobile } from './sidebar-mobile'
 import { SidebarToggle } from './sidebar-toggle'
+import { ProfileModal } from './profile-modal'
+import { ProfileToggle } from './profile-toggle'
 import { ChatHistory } from './chat-history'
 
 async function UserOrLogin() {
@@ -50,11 +52,9 @@ export function Header() {
           <UserOrLogin />
         </React.Suspense>
       </div>
-      <div className="flex items-center justify-end space-x-2">
-        <a className={cn(buttonVariants({ variant: 'outline' }))}>
-          <IconUser className="size-6 mr-2 dark:hidden" />
-          <span className="hidden ml-2 md:flex">Samantha&apos;s Memory</span>
-        </a>
+      <div className="justify-end">
+        <ProfileModal />
+        <ProfileToggle />
       </div>
     </header>
   )
